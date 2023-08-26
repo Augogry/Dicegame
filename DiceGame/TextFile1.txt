@@ -1,0 +1,14 @@
+﻿UI Control: 
+- Avatar Choices
+- Player schedule choices: # of slots (1-4)
+
+1 Player:
+	1) Difficulty selection - 11,12,13,14,15
+	2) Progression (Development)
+	3) Player Starting value - 9,10,11
+	4) 
+
+2 Player:
+	1) Names on sign in
+	2) Schedule choices
+	

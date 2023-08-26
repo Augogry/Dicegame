@@ -1,0 +1,19 @@
+﻿1. Intro 3-4
+2. Intro 2 MR 2-3
+3. Intro to Game 3-4
+4. Coding the Game 2-3
+	- Some Logic Flowcharts
+5. Rebuilding Example (Progression/Extend/Growth/Exansion) - Odyssey 4-5
+5.5 Example of other modifications and connections - Interesting stuff from the coding point of view 
+6. Example of Game 3-4
+7. Future Enhancements 1-2
+
+TAbletop game, easy to see in a physical setting that we adapted to a virtual setting which meant adapting some 
+features and leaving some. Also including some additions. One of the major was a Modifiable Random.
+Allowed for combat mechanisms like: ...
+1-2 player game for now, but extendable to more players
+Lemme explain some of the coding challenges:
+SHow code, go through what you worked with
+Crazy stuff that happened to me while doing it
+Talk about how we hope to improve the UI
+How I intend to continue working on it towards the fall semester 

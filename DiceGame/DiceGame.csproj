@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43C5B774-57E7-429C-AE42-EFE64731A093}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DiceGame</RootNamespace>
+    <AssemblyName>DiceGame</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasicCells.cs" />
+    <Compile Include="Cell.cs" />
+    <Compile Include="ChangeFacesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeFacesForm.Designer.cs">
+      <DependentUpon>ChangeFacesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Character.cs" />
+    <Compile Include="DiceGameLaunch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiceGameLaunch.Designer.cs">
+      <DependentUpon>DiceGameLaunch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DungeonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DungeonForm.Designer.cs">
+      <DependentUpon>DungeonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs" />
+    <Compile Include="marketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marketForm.Designer.cs">
+      <DependentUpon>marketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnePlayer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnePlayer.Designer.cs">
+      <DependentUpon>OnePlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simulacrum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simulacrum.Designer.cs">
+      <DependentUpon>Simulacrum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TownForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TownForm.Designer.cs">
+      <DependentUpon>TownForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TwoPlayers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TwoPlayers.Designer.cs">
+      <DependentUpon>TwoPlayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiceGame.cs" />
+    <Compile Include="inputNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inputNameForm.Designer.cs">
+      <DependentUpon>inputNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SparForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SparForm.Designer.cs">
+      <DependentUpon>SparForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseSpecialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UseSpecialForm.Designer.cs">
+      <DependentUpon>UseSpecialForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChangeFacesForm.resx">
+      <DependentUpon>ChangeFacesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiceGameLaunch.resx">
+      <DependentUpon>DiceGameLaunch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DungeonForm.resx">
+      <DependentUpon>DungeonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marketForm.resx">
+      <DependentUpon>marketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnePlayer.resx">
+      <DependentUpon>OnePlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simulacrum.resx">
+      <DependentUpon>Simulacrum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TownForm.resx">
+      <DependentUpon>TownForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TwoPlayers.resx">
+      <DependentUpon>TwoPlayers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inputNameForm.resx">
+      <DependentUpon>inputNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SparForm.resx">
+      <DependentUpon>SparForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseSpecialForm.resx">
+      <DependentUpon>UseSpecialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CellWeights.txt" />
+    <Content Include="TextFile1.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
